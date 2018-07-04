@@ -43,7 +43,7 @@ public class EarthquakeLoader extends AsyncTaskLoader<List<Earthquake>> {
         mUrl = url;
     }
 
-    
+
     @Override
     protected void onStartLoading() {
         forceLoad();
@@ -53,7 +53,7 @@ public class EarthquakeLoader extends AsyncTaskLoader<List<Earthquake>> {
      * This is on a background thread.
      */
     @Override
-    public List<Earthquake> loadInBackground() {
+    public List<Earthquake> loadInBackground()  { {
         if (mUrl == null) {
             return null;
         }
